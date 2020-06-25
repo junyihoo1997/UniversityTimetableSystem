@@ -8,7 +8,7 @@ Public Class Login
 
         Dim sql As String
         If txtID.Text = "" Or txtPassword.Text = "" Then
-            MessageBox.Show("User ID or Password field is empty!! Please Enter Again!")
+            MessageBox.Show("User ID or Password field is empty! Please Enter Again!")
         Else
             Connection = New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=SDPassignment.accdb;Persist Security Info=False;")
             sql = "Select * From LoginAccount where ID='" & txtID.Text & "' And Password='" & txtPassword.Text & "'"
